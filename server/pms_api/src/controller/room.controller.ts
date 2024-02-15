@@ -13,7 +13,7 @@ const createRoom = catchAsync(
       price,
       available,
       capacity,
-      amenities,
+      total_room,
       image,
       description,
     } = req.body;
@@ -29,7 +29,7 @@ const createRoom = catchAsync(
       price: parseInt(price),
       available,
       capacity: parseInt(capacity),
-      amenities,
+      total_room:parseInt(total_room),
       image,
       description,
     });
